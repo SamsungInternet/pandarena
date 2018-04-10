@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="js/aframe.min.js"></script>
+    <script src="js/aframe-extras.min.js"></script>
+    <script src="https://rawgit.com/feiss/aframe-environment-component/master/dist/aframe-environment-component.min.js"></script>
+    <title>Pandarena</title>
+</head>
+<body>
+
+    <a-scene>
+            <a-entity environment="preset: forest"></a-entity>
+            <a-entity id="panda" gltf-model="url(models/gltfanimationexporter.gltf)" animation-mixer="clip: Character_Macarena;" position="0 0 -3" rotation="0 180 0"></a-entity>
+            <a-light type="point" color="white" position="0 2 10" target="panda"></a-light>
+    </a-scene>
+    <audio src="sound/macarena_s.mp3" autoplay loop="true"></audio>
+</body>
+</html>
